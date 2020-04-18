@@ -1,0 +1,17 @@
+{
+
+  "description": "Altera o User-agent",
+  "manifest_version": 2,
+  "name": "user-agent-bosta",
+  "version": "1.0",
+  "homepage_url": "https://github.com/davidpolverari/user-agent-bosta",
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "https://*/*", "http://*/*" 
+  ],
+  
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
