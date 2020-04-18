@@ -11,6 +11,8 @@ function rewriteUserAgentHeader(e) {
   return {requestHeaders: e.requestHeaders};
 }
 
-chrome.webRequest.onBeforeSendHeaders.addListener(rewriteUserAgentHeader,
+var API = chrome || browser;
+
+API.webRequest.onBeforeSendHeaders.addListener(rewriteUserAgentHeader,
                                           {urls: ['https://*/*', "http://*/*"]},
                                           ["blocking", "requestHeaders"]);
