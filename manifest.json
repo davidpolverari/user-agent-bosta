@@ -6,9 +6,20 @@
   "version": "1.0",
   "homepage_url": "https://github.com/davidpolverari/user-agent-bosta",
 
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Alterar User-Agent"
+  },
+
   "permissions": [
-    "webRequest", "webRequestBlocking", "https://*/*", "http://*/*" 
+    "storage", "webRequest", "webRequestBlocking", "<all_urls>" 
   ],
+
+  "icons": {
+    "16": "logo_merda.jpg",
+    "48": "logo_merda.jpg",
+    "128": "logo_merda.jpg"
+  },
   
   "background": {
     "scripts": ["background.js"]
