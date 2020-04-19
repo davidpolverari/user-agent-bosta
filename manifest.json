@@ -10,6 +10,12 @@
     "webRequest", "webRequestBlocking", "https://*/*", "http://*/*" 
   ],
   
+  "icons": {
+    "16": "logo_merda.jpg",
+    "48": "logo_merda.jpg",
+    "128": "logo_merda.jpg"
+  },
+  
   "background": {
     "scripts": ["background.js"]
   }
