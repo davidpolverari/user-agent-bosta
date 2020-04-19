@@ -7,7 +7,7 @@
   "homepage_url": "https://github.com/davidpolverari/user-agent-bosta",
 
   "permissions": [
-    "webRequest", "webRequestBlocking", "https://*/*", "http://*/*" 
+    "webRequest", "webRequestBlocking", "<all_urls>" 
   ],
   
   "icons": {
